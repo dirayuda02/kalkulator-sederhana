@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Kalkulator</title>
+
+<style>
+
+body{
+
+font-family:Arial;
+
+text-align:center;
+
+margin-top:100px;
+
+}
+
+.container{
+
+width:300px;
+
+margin:auto;
+
+padding:20px;
+
+border:1px solid black;
+
+}
+
+input{
+
+width:90%;
+
+padding:10px;
+
+margin:10px;
+
+}
+
+button{
+
+padding:10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Kalkulator Penjumlahan</h2>
+
+<input
+type="number"
+id="angka1"
+placeholder="Angka Pertama">
+
+<input
+type="number"
+id="angka2"
+placeholder="Angka Kedua">
+
+<button onclick="hitung()">
+
+Hitung
+
+</button>
+
+<h3 id="hasil"></h3>
+
+</div>
+
+<script>
+
+function hitung(){
+
+let a =
+Number(
+document
+.getElementById("angka1")
+.value
+);
+
+let b =
+Number(
+document
+.getElementById("angka2")
+.value
+);
+
+let hasil = a + b;
+
+document
+.getElementById("hasil")
+.innerHTML=
+"Hasil: "
++ hasil;
+
+}
+
+</script>
+
+</body>
+
+</html>
